@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>ClienSO - Servicios</title>
+    <style>
+        body {
+            font-family: Segoe UI, Arial, sans-serif;
+            margin: 0;
+            background: #f6f8fb;
+            color: #222;
+        }
+
+        header {
+            background: #0ea5a4;
+            color: white;
+            padding: 12px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: 600;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, .1);
+        }
+
+        h1 {
+            color: #0ea5a4;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 18px;
+            margin-top: 20px;
+        }
+
+        .card {
+            background: #f0fdfa;
+            padding: 16px;
+            border-radius: 10px;
+            border: 1px solid #bae6fd;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, .06);
+        }
+
+        .card h3 {
+            color: #0ea5a4;
+            margin-bottom: 6px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div><strong>ClienSO</strong> — Red Corporativa</div>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="about.html">Acerca</a>
+            <a href="services.html">Servicios</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Servicios Implementados</h1>
+        <p>Estos son los servicios instalados y configurados en el entorno del proyecto ClienSO.</p>
+
+        <div class="service-grid">
+            <div class="card">
+                <h3>Active Directory</h3>
+                <p>Autenticación centralizada, control de usuarios y grupos, políticas de seguridad y administración de
+                    dominio.</p>
+            </div>
+            <div class="card">
+                <h3>DNS</h3>
+                <p>Resolución de nombres interna para el dominio <strong>clienso.local</strong> y los recursos
+                    compartidos.</p>
+            </div>
+            <div class="card">
+                <h3>DHCP</h3>
+                <p>Asignación automática de direcciones IP en la red interna 192.168.10.0/24 configurada por PowerShell.
+                </p>
+            </div>
+            <div class="card">
+                <h3>FSRM</h3>
+                <p>Gestión de cuotas de almacenamiento y restricción de tipos de archivos (MP3, AVI, etc.).</p>
+            </div>
+            <div class="card">
+                <h3>IIS y Web Server</h3>
+                <p>Servidor web con sitio <strong>www.clienso.local</strong> accesible por HTTP y HTTPS con certificado
+                    emitido por la CA interna.</p>
+            </div>
+            <div class="card">
+                <h3>Políticas de Grupo</h3>
+                <p>Configuración automática de escritorio, bloqueo de panel de control, redirección de carpetas y mapeo
+                    DFS.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>© 2025 ClienSO | Proyecto Final de Sistemas Operativos 1</footer>
+</body>
+
+</html>
